@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:f="http://java.sun.com/jsf/core"
+   xmlns:h="http://java.sun.com/jsf/html">
+         <h:head>
+      <title>BEMO</title>		
+      <h:outputStylesheet library="css" name="styles.css"  /> 	
+   </h:head>
+
+   <h:body>
+   <h1>Type a number between 4 and 12.53 (out of service): 
+   <h:inputText>nrbtwn400and1254</h:inputText>
+   <button>maci</button>
+   </h1>
+
+   <h:panelGrid id="panel" columns="2" border="1"
+   cellpadding="10" cellspacing="1">
+      <f:facet name="header">
+         <h:outputText value="Login"/> (out of service)
+      </f:facet>
+      <h:outputLabel value="Username" />
+      <h:inputText  />
+      <h:outputLabel value="Password" />
+      <h:inputSecret />
+      <f:facet name="footer">
+         <h:panelGroup style="display:block; text-align:center">
+            <h:commandButton id="submit" value="Submit" /> (out of service)
+         </h:panelGroup>
+      </f:facet>
+</h:panelGrid>
+<hr />
+<h1> Agree (out of service)
+   <h:selectBooleanCheckbox value="Remember Me" id="chkRememberMe" /></h1>
+   <hr />
+      <h:form>
+      <h3>Implicit Navigation using Managed Beans:</h3>
+      </h:form>
+      <h:form>
+         <h:commandButton action="#{navigationController.moveToPage1}"
+            value="Page 1" />
+            
+         <h:commandButton action="#{navigationController.moveToDatatablepage}"
+            value="Data table page" />
+         
+      </h:form>
+      <br/>
+      
+   </h:body>
+</html>

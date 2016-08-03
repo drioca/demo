@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+   xmlns:h="http://java.sun.com/jsf/html">
+      <h:head>
+      <title>BEMO - Data table</title>		
+      <h:outputStylesheet library="css" name="styles.css"  /> 	
+   </h:head>
+   <h:body>
+  
+     
+         <h2>Data Table - Under construction</h2>
+   <h:form>
+      <h:dataTable value="#{userData.tasks}" var="task"
+         styleClass="taskTable"
+         headerClass="taskTableHeader"
+         rowClasses="taskTableOddRow,taskTableEvenRow">
+         <h:column>    				
+            <f:facet name="header">Responsible</f:facet>    				
+            #{task.responsible}
+         </h:column>
+         <h:column>
+            <f:facet name="header">Task</f:facet>
+            #{task.name}
+         </h:column>
+         <h:column>
+            <f:facet name="header">Deadline</f:facet>
+            #{task.deadline}
+         </h:column>
+         <h:column>
+            <f:facet name="header">Fee</f:facet>
+            #{task.fee}
+         </h:column>
+      </h:dataTable>
+  </h:form>
+  
+       <h2> </h2> 
+       <h:form>
+         <h:commandButton action="home?faces-redirect=true"
+            value="Home Page" />
+      </h:form>
+   </h:body>
+</html>

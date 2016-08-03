@@ -88,4 +88,13 @@ private static final long serialVersionUID = 1L;
    public void setDeadline(Date deadline) {
       this.deadline = deadline;
    }
+   
+   private int age;
+  
+   public int getAge() {
+      return age;
+   }
+   public void setAge(int age) {
+      this.age = age;
+}
 }

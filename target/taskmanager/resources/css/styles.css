@@ -1,0 +1,32 @@
+.taskTable{   
+   border-collapse:collapse;
+   border:1px solid #000000;
+}
+
+.taskTableHeader{
+   text-align:center;
+   background:none repeat scroll 0 0 #B5B5B5;
+   border-bottom:1px solid #000000;  
+   padding:2px;
+}
+
+.taskTableOddRow{
+   text-align:center;
+   background:none repeat scroll 0 0 #FFFFFFF;	
+}
+
+.taskTableEvenRow{
+   text-align:center;
+   background:none repeat scroll 0 0 #D3D3D3;
+}
+h2 {
+    background-color: #808000;
+}
+body {
+    background-color: #c1ab77;
+    margin: auto;
+    margin-top: 100px;
+    width: 60%;
+    border: 0px solid #73AD21;
+    padding: 10px;
+}
