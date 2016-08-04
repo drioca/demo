@@ -89,7 +89,7 @@ private static final long serialVersionUID = 1L;
       this.deadline = deadline;
    }
    
-   private int age;
+   public int age;
   
    public int getAge() {
       return age;
