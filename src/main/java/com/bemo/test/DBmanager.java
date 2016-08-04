@@ -6,7 +6,6 @@ import javax.faces.bean.RequestScoped;
 
 @ManagedBean(name = "DBmanager", eager = true)
 @RequestScoped
-public class DBmanager {
-
-   
+public void DBmanager (ActionEvent e){
+   data="Hello World";
 }
