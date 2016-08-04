@@ -17,7 +17,7 @@ private static final long serialVersionUID = 1L;
 public static void main (){ 
 }
    public void insert () {
-      navigationController.moveToDatatablepage;
+      System.out.println("Hello ");
    }
 
    
