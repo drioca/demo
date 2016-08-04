@@ -6,7 +6,7 @@ import javax.faces.bean.RequestScoped;
 
 @ManagedBean(name = "DBmanager", eager = true)
 @RequestScoped
-public class saveData {
+public class DBmanager {
 
    
 }
