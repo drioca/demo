@@ -19,8 +19,5 @@ private static final long serialVersionUID = 1L;
       return "result";
    }
 
-   public void updateData(ActionEvent e){
-      data="Hello World";
-   }
-
+   
 }
