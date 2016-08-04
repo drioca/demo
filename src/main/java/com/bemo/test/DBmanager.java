@@ -14,9 +14,9 @@ import javax.faces.event.ValueChangeEvent;
 public class DBmanager implements Serializable {
 
 private static final long serialVersionUID = 1L;
-public static void main { 
+public static void main (){ 
 }
-   public void insert{
+   public void insert () {
       navigationController.moveToDatatablepage;
    }
 
