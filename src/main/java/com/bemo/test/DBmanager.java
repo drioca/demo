@@ -18,7 +18,7 @@ public static void main (){
 }
    public void insert () {
       System.out.println("Hello ");
-      age = +age;
+      age += 1;
    }
 
    
