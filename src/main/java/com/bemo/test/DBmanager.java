@@ -26,7 +26,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
 }
    public void insert () {
       
-      UserData.age += 0.6;
+      UserData.age += 3;
       
         try {
             Connection con = getConnection( );
