@@ -50,13 +50,13 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
       }
    }
    
-      public int aVerage () {
+      public void aVerage () {
         ResultSet rs;
         try {
             Connection con = getConnection( ); 
             Statement stmt = con.createStatement();
             
-       rs = stmt.executeQuery("SELECT AVG(age) FROM test");
+       UserData.aVg = getInt(stmt.executeQuery("SELECT AVG(age) FROM test"));
        
         stmt.executeUpdate("commit;");
          con.close();
@@ -72,7 +72,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
       } finally {
        //try{con.close();} catch(SQLException e){};
       }
-      return rs.getInt(1);
+      
    }
  
    }
