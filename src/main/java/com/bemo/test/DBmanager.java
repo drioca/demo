@@ -26,8 +26,8 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
    }
    
    private String sqlExp ()      { 
-      private String sqlExp = "INSERT INTO test (age) VALUES (" + "3" +");";
-      return sglExp;
+      private String iNs = "INSERT INTO test (age) VALUES (" + "3" +");";
+      return iNs;
       }
    public void insert () {
       
