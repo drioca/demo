@@ -62,7 +62,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
         
         stmt.executeUpdate("commit;");
          con.close();
-         return rs.toString()
+         return rs.toString();
         }
 
      
