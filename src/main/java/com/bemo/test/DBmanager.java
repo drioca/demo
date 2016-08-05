@@ -41,7 +41,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
        
            // Check first if an InnerException exists
                 if (e != null)
-                   UserData.dbemanerrormsg = e.ToString();
+                   UserData.dbemanerrormsg = e.toString();
       } finally {
        //try{con.close();} catch(SQLException e){};
       }
