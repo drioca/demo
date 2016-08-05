@@ -27,13 +27,13 @@ public static void main (){
         }
 
      
-      } catch (Exception e) {
+         catch (Exception e) {
         attributes.put("message", "There was an error: " + e);
         return new ModelAndView(attributes, "error.ftl");
       } finally {
         if (connection != null) try{connection.close();} catch(SQLException e){}
       }
-    }, new FreeMarkerEngine());
+     new FreeMarkerEngine());
    }
 
    
