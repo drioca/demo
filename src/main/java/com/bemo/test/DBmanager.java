@@ -5,7 +5,12 @@ import javax.faces.bean.RequestScoped;
 import java.io.Serializable;
 import javax.faces.bean.SessionScoped;
 import javax.faces.event.ValueChangeEvent;
-
+//DB
+   import java.net.URI;
+    import java.net.URISyntaxException;
+    import java.sql.Connection;
+    import java.sql.DriverManager;
+    import java.sql.SQLException;
 
 @ManagedBean(name = "DBmanager", eager = true)
 @SessionScoped
