@@ -36,7 +36,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
         try {
             Connection con = getConnection( ); 
             Statement stmt = con.createStatement();
-        stmt.executeUpdate(iNs);
+        stmt.executeUpdate(sglExp());
         stmt.executeUpdate("commit;");
          con.close();
         }
