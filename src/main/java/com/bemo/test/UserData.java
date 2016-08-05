@@ -89,12 +89,21 @@ private static final long serialVersionUID = 1L;
       this.deadline = deadline;
    }
    
-   private int age;
+   public static int age;
   
    public int getAge() {
       return age;
-   }
+   	}
    public void setAge(int age) {
       this.age = age;
-}
+	}
+public static String dbemanerrormsg;
+   public String getdbemanerrormsg() {
+      return dbemanerrormsg;
+   	}
+   public void setdbemanerrormsg(String dbemanerrormsg) {
+      this.dbemanerrormsg = dbemanerrormsg;
+	}
+
+
 }
