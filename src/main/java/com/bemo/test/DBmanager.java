@@ -48,6 +48,34 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
        //try{con.close();} catch(SQLException e){};
       }
    }
+   
+      public String aVerege () {
+        
+      String aVg = "SELECT AVG(age) FROM test";
+
+        try {
+            Connection con = getConnection( ); 
+            Statement stmt = con.createStatement();
+            
+       ResultSet rs = stmt.executeQuery(aVg);
+        
+        
+        stmt.executeUpdate("commit;");
+         con.close();
+         return rs.toString()
+        }
+
+     
+         catch (Exception e) {
+       
+           // Check first if an InnerException exists
+                if (e != null)
+                   UserData.dbemanerrormsg = e.toString();
+      } finally {
+       //try{con.close();} catch(SQLException e){};
+      }
+   }
+ 
    }
 
    
