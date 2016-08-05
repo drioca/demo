@@ -31,7 +31,8 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
         try {
             Connection con = getConnection( );
             Statement stmt = con.createStatement();
-        stmt.executeUpdate("INSERT INTO test (age) VALUES (56)");
+        stmt.executeUpdate("INSERT INTO test (age) VALUES (56);");
+        stmt.executeUpdate("commit;");
 
         }
 
