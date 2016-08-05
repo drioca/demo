@@ -38,10 +38,10 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
 
      
          catch (Exception e) {
-        attributes.put("message", "There was an error: " + e);
-        return new ModelAndView(attributes, "error.ftl");
+        //attributes.put("message", "There was an error: " + e);
+        //return new ModelAndView(attributes, "error.ftl");
       } finally {
-       try{connection.close();} catch(SQLException e){};
+       try{con.close();} catch(SQLException e){};
       }
      
    }
