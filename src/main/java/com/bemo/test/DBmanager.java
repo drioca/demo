@@ -31,7 +31,7 @@ public static void main (){
         attributes.put("message", "There was an error: " + e);
         return new ModelAndView(attributes, "error.ftl");
       } finally {
-        if (connection != null) try{connection.close();} catch(SQLException e){}
+        if (connection != null) try{connection.close();} catch(SQLException e){};
       }
      new FreeMarkerEngine());
    }
