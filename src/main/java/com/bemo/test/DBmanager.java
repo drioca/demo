@@ -50,7 +50,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
       }
    }
    
-      public String aVerege () {
+      public int aVerage () {
         
         try {
             Connection con = getConnection( ); 
