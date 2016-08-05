@@ -29,14 +29,15 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
       
         try {
             getConnection();
-        executeUpdate("INSERT INTO test (age) VALUES (55)");
+            Statement stmt = connection.createStatement();
+        stmt.executeUpdate("INSERT INTO test (age) VALUES (55)");
 
         }
 
      
          catch (Exception e) {
-        attributes.put("message", "There was an error: " + e);
-        return new ModelAndView(attributes, "error.ftl");
+        //attributes.put("message", "There was an error: " + e);
+        //return new ModelAndView(attributes, "error.ftl");
       } finally {
         //if (connection != null) try{connection.close();} catch(SQLException e){};
       }
