@@ -40,8 +40,8 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
          catch (Exception e) {
        
            // Check first if an InnerException exists
-                if (e.InnerException != null)
-                   UserData.dbemanerrormsg = e.InnerException.ToString();
+                if (e != null)
+                   UserData.dbemanerrormsg = e.ToString();
       } finally {
        //try{con.close();} catch(SQLException e){};
       }
