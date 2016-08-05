@@ -26,7 +26,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
 }
    public void insert () {
       
-      UserData.age += 1;
+      UserData.age += 0.6;
       
         try {
             Connection con = getConnection( );
@@ -38,10 +38,10 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
 
      
          catch (Exception e) {
-        //attributes.put("message", "There was an error: " + e);
-        //return new ModelAndView(attributes, "error.ftl");
+        attributes.put("message", "There was an error: " + e);
+        return new ModelAndView(attributes, "error.ftl");
       } finally {
-        //if (connection != null) try{connection.close();} catch(SQLException e){};
+       try{connection.close();} catch(SQLException e){};
       }
      
    }
