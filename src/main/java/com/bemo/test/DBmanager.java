@@ -33,7 +33,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
             Statement stmt = con.createStatement();
         stmt.executeUpdate("INSERT INTO test (age) VALUES (56);");
         stmt.executeUpdate("commit;");
-
+         con.close();
         }
 
      
@@ -41,7 +41,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
         //attributes.put("message", "There was an error: " + e);
         //return new ModelAndView(attributes, "error.ftl");
       } finally {
-       try{con.close();} catch(SQLException e){};
+       //try{con.close();} catch(SQLException e){};
       }
      
    }
