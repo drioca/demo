@@ -25,8 +25,8 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
     return DriverManager.getConnection(dbUrl);
    }
    
-   private String sqlExp ()
-      { sqlExp = "INSERT INTO test (age) VALUES (" + "3" +");";
+   private String sqlExp ()      { 
+      private String sqlExp = "INSERT INTO test (age) VALUES (" + "3" +");";
       return sglExp;
       }
    public void insert () {
