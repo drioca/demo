@@ -93,8 +93,17 @@ private static final long serialVersionUID = 1L;
   
    public int getAge() {
       return age;
-   }
+   	}
    public void setAge(int age) {
       this.age = age;
-}
+	}
+public static String dbemanerrormsg;
+   public String getdbemanerrormsg() {
+      return dbemanerrormsg;
+   	}
+   public void setdbemanerrormsg(String dbemanerrormsg) {
+      this.dbemanerrormsg = dbemanerrormsg;
+	}
+
+
 }
