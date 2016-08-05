@@ -23,10 +23,8 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
       UserData.age = 40;
       
         try {
-        connection = DatabaseUrl.extract().getConnection();
-
-        Statement stmt = connection.createStatement();
-        stmt.executeUpdate("INSERT INTO test VALUES (age");
+            getConnection();
+        executeUpdate("INSERT INTO test (age) VALUES (55)");
 
         }
 
