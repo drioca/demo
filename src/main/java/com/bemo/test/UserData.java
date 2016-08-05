@@ -105,5 +105,13 @@ public static String dbemanerrormsg;
       this.dbemanerrormsg = dbemanerrormsg;
 	}
 
+//aVg
+public static String aVg;
+   public String getaVg() {
+      return aVg;
+   	}
+   public void setaVg(String aVg) {
+      this.aVg = aVg;
+	}
 
 }
