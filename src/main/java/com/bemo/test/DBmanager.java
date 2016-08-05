@@ -18,19 +18,21 @@ import javax.faces.event.ValueChangeEvent;
 public class DBmanager implements Serializable {
 
 private static final long serialVersionUID = 1L;
-public static void main (){ 
-}
+public static void main (){ }
+
 private static Connection getConnection() throws URISyntaxException, SQLException {
     String dbUrl = System.getenv("JDBC_DATABASE_URL");
     return DriverManager.getConnection(dbUrl);
-}
-   public void insert () {
-      
-      UserData.age += 3;
-      private String sqlExp ()
+   }
+   
+   private String sqlExp ()
       { sqlExp = "INSERT INTO test (age) VALUES (" + "3" +");";
       return sglExp;
       }
+   public void insert () {
+      
+      UserData.age += 3;
+      
         try {
             Connection con = getConnection( ); 
             Statement stmt = con.createStatement();
@@ -48,7 +50,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
       } finally {
        //try{con.close();} catch(SQLException e){};
       }
-     
+   }
    }
 
    
