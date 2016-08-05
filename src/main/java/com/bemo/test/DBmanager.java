@@ -14,6 +14,10 @@ public class DBmanager implements Serializable {
 private static final long serialVersionUID = 1L;
 public static void main (){ 
 }
+private static Connection getConnection() throws URISyntaxException, SQLException {
+    String dbUrl = System.getenv("JDBC_DATABASE_URL");
+    return DriverManager.getConnection(dbUrl);
+}
    public void insert () {
       
       UserData.age = 40;
