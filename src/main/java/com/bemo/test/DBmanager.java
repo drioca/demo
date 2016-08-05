@@ -52,8 +52,6 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
    
       public String aVerege () {
         
-      
-
         try {
             Connection con = getConnection( ); 
             Statement stmt = con.createStatement();
@@ -62,7 +60,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
        
         stmt.executeUpdate("commit;");
          con.close();
-         return rs.toString();
+         return toString(rs);
         }
 
      
