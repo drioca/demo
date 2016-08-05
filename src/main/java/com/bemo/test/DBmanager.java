@@ -17,8 +17,8 @@ private static final long serialVersionUID = 1L;
 public static void main (){ 
 }
    public void insert () {
-      System.out.println("Hello ");
-      age += 1;
+      
+      UserData.age = 40;
    }
 
    
