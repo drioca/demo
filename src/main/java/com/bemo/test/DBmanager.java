@@ -8,10 +8,7 @@ import javax.faces.event.ValueChangeEvent;
 //DB
    import java.net.URI;
     import java.net.URISyntaxException;
-    import java.sql.Connection;
-    import java.sql.Statement;
-    import java.sql.DriverManager;
-    import java.sql.SQLException;
+    import java.sql
 
 @ManagedBean(name = "DBmanager", eager = true)
 @SessionScoped
