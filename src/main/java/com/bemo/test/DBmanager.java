@@ -28,7 +28,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
 
    public void insert () {
          //String ageString = Integer.toString(UserData.age);
-      String iNs = "INSERT INTO test (age,timestamp) VALUES (" + Integer.toString(UserData.age) +");";
+      String iNs = "INSERT INTO test (age) VALUES (" + Integer.toString(UserData.age) +");";
       
       
       UserData.age += 3;
