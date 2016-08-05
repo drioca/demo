@@ -56,8 +56,8 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
             Connection con = getConnection( ); 
             Statement stmt = con.createStatement();
             
-       UserData.aVg = (stmt.executeQuery("SELECT AVG(age) FROM test")).getString;
-       
+       int iaVg = (stmt.executeQuery("SELECT AVG(age) FROM test"));
+       Userdata.aVg = Integer.toString(iaVg);
         stmt.executeUpdate("commit;");
          con.close();
          
