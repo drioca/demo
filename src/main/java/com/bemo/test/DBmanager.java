@@ -27,10 +27,10 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
    
 
    public void insert () {
-         private String sqlExp ()      { 
+         
       String iNs = "INSERT INTO test (age) VALUES (" + "3" +");";
-      return iNs;
-      }
+      
+      
       UserData.age += 3;
       
         try {
