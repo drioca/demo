@@ -106,8 +106,8 @@ public static String dbemanerrormsg;
 	}
 	
 	public static String dbemanerrormsg2;
-   public String getdbemanerrormsg() {
-      return dbemanerrormsg;
+   public String getdbemanerrormsg2() {
+      return dbemanerrormsg2;
    	}
    public void setdbemanerrormsg2(String dbemanerrormsg2) {
       this.dbemanerrormsg2 = dbemanerrormsg2;
