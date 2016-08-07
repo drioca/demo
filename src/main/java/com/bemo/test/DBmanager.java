@@ -56,7 +56,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
             Connection con = getConnection( ); 
             Statement stmt = con.createStatement();
             
-       int iaVg = (stmt.executeQuery("SELECT AVG(age) FROM test")).getInt(0);
+       int iaVg = (stmt.executeQuery("SELECT AVG(age) FROM test")).getInt(1);
        UserData.aVg = Integer.toString(iaVg);
         stmt.executeUpdate("commit;");
          con.close();
@@ -68,7 +68,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
        
            // Check first if an InnerException exists
                 if (e != null)
-                   UserData.dbemanerrormsg = e.toString();
+                   UserData.dbemanerrormsg2 = e.toString();
       } finally {
        //try{con.close();} catch(SQLException e){};
       }
