@@ -51,7 +51,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
    }
    
       public void aVerage () {
-          float iaVg ;
+          float iaVg = 0f;
         ResultSet rs;
         try {
             Connection con = getConnection( ); 
