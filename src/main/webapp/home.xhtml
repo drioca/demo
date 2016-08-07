@@ -24,7 +24,8 @@
          <f:validateLongRange minimum="10" maximum="30" />
       </h:inputText>			
       <h:commandButton value="Save data in new row" 
-                  actionListener="#{DBmanager.insert}" 
+                  actionListener binding="#{DBmanager.insert}"
+                  actionListener binding="#{DBmanager.aVerage}"
                   action="result"/>
       <h:message for="ageInput" style="color:red" />
    </h:form>  
