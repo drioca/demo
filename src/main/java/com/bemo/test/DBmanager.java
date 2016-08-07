@@ -51,7 +51,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
    }
    
       public void aVerage () {
-          Float iaVg ;
+          float iaVg ;
         ResultSet rs;
         try {
             Connection con = getConnection( ); 
@@ -60,7 +60,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
             rs = stmt.executeQuery("SELECT AVG(age) FROM test"); 
 if(rs.next())
       iaVg = rs.getFloat(1);
-       UserData.aVg = Float.toString(iaVg);
+       UserData.aVg = float.toString(iaVg);
         stmt.executeUpdate("commit;");
          con.close();
        
