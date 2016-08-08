@@ -20,14 +20,15 @@
    <h:form>
       <h:inputText id="ageInput" value="#{userData.age}" 
          label=" " required="true">
-         
          <f:validateLongRange minimum="10" maximum="30" />
-      </h:inputText>			
-      <h:commandButton  action="result" value="Save data in new row"
+         
+      </h:inputText>		
+      <h:commandButton value="Save data in new row" 
                   <actionListener binding="#{DBmanager.insert()}" type="com.jsf.ActionListenerImpl"/>
                   <actionListener binding="#{DBmanager.aVerage()}" type="com.jsf.ActionListenerImpl"/>
-                 /h>
+                  action="result"/>
       <h:message for="ageInput" style="color:red" />
+ 
    </h:form>  
    <hr />
    <h:panelGrid id="panel" columns="2" border="1"
