@@ -24,6 +24,8 @@ public static void main (){ }
 private static Connection getConnection() throws URISyntaxException, SQLException {
     String dbUrl = System.getenv("JDBC_DATABASE_URL");
     return DriverManager.getConnection(dbUrl);
+    
+    
    }
    
 
@@ -33,7 +35,15 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
 
         try {
             Connection con = getConnection( ); 
-            Statement stmt = con.createStatement();
+            Statement stmtc = con.createStatement();
+            stmtc.executeUpdate("CREATE TABLE IF NOT EXISTS public.test (key_column bigserial NOT NULL DEFAULT nextval('test_key_column_seq'::regclass),
+	age numeric(131089,0),
+	"timestamp" timestamptz,
+	ctimestamp timestamptz DEFAULT now(),
+	CONSTRAINT test_pkey PRIMARY KEY (key_column)
+);
+CREATE UNIQUE INDEX test_pkey ON public.test (key_column);");
+         Statement stmt = con.createStatement();
         stmt.executeUpdate(iNs);
         stmt.executeUpdate("commit;");
          con.close();
