@@ -24,8 +24,8 @@
          
       </h:inputText>		
       <h:commandButton value="Save data in new row" 
-                  actionListener binding="#{DBmanager.insert()}" type="com.jsf.ActionListenerImpl"
-                  actionListener binding="#{DBmanager.aVerage()}" type="com.jsf.ActionListenerImpl"
+                  actionListener="#{DBmanager.insert()}" 
+                  actionListener="#{DBmanager.aVerage()}"
                   action="result"/>
       <h:message for="ageInput" style="color:red" />
  
