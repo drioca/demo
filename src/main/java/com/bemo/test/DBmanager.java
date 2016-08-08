@@ -10,6 +10,7 @@ import javax.faces.event.ValueChangeEvent;
     import java.net.URISyntaxException;
     import java.sql.Connection;
     import java.sql.Statement;
+    import java.sql.ResultSet;
     import java.sql.DriverManager;
     import java.sql.SQLException;
 
@@ -48,6 +49,36 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
        //try{con.close();} catch(SQLException e){};
       }
    }
+   
+      public void aVerage () {
+          float iaVg = 0f;
+        ResultSet rs;
+        try {
+            Connection con = getConnection( ); 
+            Statement stmt = con.createStatement();
+            
+            rs = stmt.executeQuery("SELECT AVG(age) FROM test"); 
+if(rs.next())
+      iaVg = rs.getFloat(1);
+       UserData.aVg = Float.toString(iaVg);
+        stmt.executeUpdate("commit;");
+         con.close();
+       
+         
+        }
+
+     
+         catch (Exception e) {
+       
+           // Check first if an InnerException exists
+                if (e != null)
+                   UserData.dbemanerrormsg2 = e.toString();
+      } finally {
+       //try{con.close();} catch(SQLException e){};
+      }
+      
+   }
+ 
    }
 
    

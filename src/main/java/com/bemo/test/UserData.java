@@ -104,6 +104,22 @@ public static String dbemanerrormsg;
    public void setdbemanerrormsg(String dbemanerrormsg) {
       this.dbemanerrormsg = dbemanerrormsg;
 	}
+	
+	public static String dbemanerrormsg2;
+   public String getdbemanerrormsg2() {
+      return dbemanerrormsg2;
+   	}
+   public void setdbemanerrormsg2(String dbemanerrormsg2) {
+      this.dbemanerrormsg2 = dbemanerrormsg2;
+	}
 
+//aVg
+public static String aVg;
+   public String getaVg() {
+      return aVg;
+   	}
+   public void setaVg(String aVg) {
+      this.aVg = aVg;
+	}
 
 }
