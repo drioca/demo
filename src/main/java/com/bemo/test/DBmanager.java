@@ -36,7 +36,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
         try {
             Connection con = getConnection( ); 
             Statement stmtc = con.createStatement();
-         stmtc.executeUpdate("CREATE TABLE IF NOT EXSISTS public.test (key_column bigserial NOT NULL, age numeric(4,0), ctimestamp timestamptz DEFAULT now(), CONSTRAINT test_pkey PRIMARY KEY (key_column) );");
+         stmtc.executeUpdate("CREATE TABLE IF NOT EXSISTS test (key_column bigserial NOT NULL, age numeric(4,0), ctimestamp timestamptz DEFAULT now(), CONSTRAINT test_pkey PRIMARY KEY (key_column) );");
         Statement stmt = con.createStatement();
         stmt.executeUpdate(iNs);
         stmt.executeUpdate("commit;");
