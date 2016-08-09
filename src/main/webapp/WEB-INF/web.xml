@@ -27,6 +27,5 @@
 <listener>
 <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
 </listener>
-<servlet-mapping>
-  </servlet-mapping>
+
 </web-app>
