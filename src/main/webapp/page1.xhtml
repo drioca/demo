@@ -11,13 +11,13 @@
    
 <h:body>
 
-<h1>JSF 2.0 View Data From The Database Table Example</h1>
+<h1>JSF 2.0 View Data From A Database Table </h1>
 
 <h:dataTable value="#{DBmanager.getRecordList()}" var="u" border="1">
 
 <h:column>
 <f:facet name="header">
-User ID
+Nr
 </f:facet>
 #{u.key_column}
 </h:column>
