@@ -17,7 +17,7 @@ import javax.faces.event.ValueChangeEvent;
    import java.util.ArrayList;
    import java.util.List;
    import java.io.Serializable;
-   import com.dev.user.model.User;
+   //import com.dev.user.model.User;
 
 @ManagedBean(name = "DBmanager", eager = true)
 @SessionScoped
@@ -97,7 +97,7 @@ Connection con = null;
 ResultSet rs = null;
 try
 {
-Connection con = getConnection( ); 
+//Connection con = getConnection( ); 
 String sql = "select * from test";
 ps= con.prepareStatement(sql); 
 rs= ps.executeQuery(); 
