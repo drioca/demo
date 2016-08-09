@@ -97,7 +97,7 @@ Connection con = null;
 ResultSet rs = null;
 try
 {
-Connection con = getConnection( ); 
+Connection con = getConnection(); 
 String sql = "select * from public.test";
 ps= con.prepareStatement(sql); 
 rs= ps.executeQuery(); 
