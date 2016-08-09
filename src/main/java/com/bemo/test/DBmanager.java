@@ -93,7 +93,7 @@ if(rs.next())
 {
 List<Record> list = new ArrayList<Record>();
 PreparedStatement ps = null;
-Connection con = null;
+//Connection con = null;
 ResultSet rs = null;
 try
 {
