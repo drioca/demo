@@ -17,10 +17,10 @@ return key_column;
 public void setKey_column(long key_column) {
 this.key_column = key_column;
 }
-//*public String getAge() {
-//return age;}
+public int getAge() {
+return age;}
 
-public void setAge(String age) {
+public void setAge(int age) {
 this.age = age;
 }
 public Date getCtimestamp() {
