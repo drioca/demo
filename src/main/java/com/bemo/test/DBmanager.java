@@ -104,7 +104,7 @@ rs= ps.executeQuery();
 while (rs.next())
 {
 Record record = new Record();
-record.setRecord(rs.getLong("key_column"));
+record.setKey_column(rs.getLong("key_column"));
 record.setAge(rs.getInt("age"));
 record.setCtimestamp(rs.getDate("ctimestamp"));
 list.add(record);
