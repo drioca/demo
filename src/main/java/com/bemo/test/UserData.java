@@ -97,6 +97,7 @@ private static final long serialVersionUID = 1L;
   public void setAge(int age) {
       	this.age = age;
 	}
+	
 	public long getKey_column() {
 	return key_column;
 	}
@@ -104,10 +105,10 @@ private static final long serialVersionUID = 1L;
 	this.key_column = key_column;
 	}
 
-  public String getCtimestamp() {
+  	public String getCtimestamp() {
 	return ctimestamp;
 	}
-  public void setCtimestamp(String ctimestamp) {
+  	public void setCtimestamp(String ctimestamp) {
 	this.ctimestamp = ctimestamp;
 	} 
 
