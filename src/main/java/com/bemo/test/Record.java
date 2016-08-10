@@ -23,10 +23,10 @@ return age;}
 public void setAge(int age) {
 this.age = age;
 }
-public Date getCtimestamp() {
+public String getCtimestamp() {
 return ctimestamp;
 }
-public void setCtimestamp(Date ctimestamp) {
+public void setCtimestamp(String ctimestamp) {
 this.ctimestamp = ctimestamp;
 } 
 }
