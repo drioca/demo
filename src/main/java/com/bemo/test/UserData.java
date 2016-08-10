@@ -20,6 +20,7 @@ private static final long serialVersionUID = 1L;
 	private Date deadline; 
 	private long key_column;
 	private String ctimestamp;
+	private String ctimestamp2;
 
 	
    private static final ArrayList<Task> tasks 
@@ -111,7 +112,12 @@ private static final long serialVersionUID = 1L;
   	public void setCtimestamp(String ctimestamp) {
 	this.ctimestamp = ctimestamp;
 	} 
-
+	public String getCtimestamp2() {
+	return ctimestamp2;
+	}
+  	public void setCtimestamp2(String ctimestamp2) {
+	this.ctimestamp2 = ctimestamp2;
+	} 
   public static String dbemanerrormsg;
 	public String getdbemanerrormsg() {
       	return dbemanerrormsg;
