@@ -112,11 +112,11 @@ private static final long serialVersionUID = 1L;
   	public void setCtimestamp(String ctimestamp) {
 	this.ctimestamp = ctimestamp;
 	} 
-	public String getCtimestamp2() {
-	return ctimestamp2;
+	public String getCtimestampt() {
+	return ctimestampt;
 	}
-  	public void setCtimestamp2(String ctimestamp2) {
-	this.ctimestamp2 = ctimestamp2;
+  	public void setCtimestampt(String ctimestampt) {
+	this.ctimestampt = ctimestampt;
 	} 
   public static String dbemanerrormsg;
 	public String getdbemanerrormsg() {
