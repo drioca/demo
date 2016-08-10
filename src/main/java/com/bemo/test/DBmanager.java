@@ -107,7 +107,7 @@ while (rs.next())
 Record record = new Record();
 record.setKey_column(rs.getLong("key_column"));
 record.setAge(rs.getInt("age"));
-record.setCtimestamp(rs.getTimestamp("ctimestamp"));
+record.setCtimestamp(rs.getTimestamp("ctimestamp").toLocalDateTime);
 list.add(record);
 } 
 con.close();
