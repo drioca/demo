@@ -18,7 +18,7 @@ import javax.faces.event.ValueChangeEvent;
    import java.util.List;
    import java.io.Serializable;
    import java.util.Date;
-   import java.sql.Timestamp
+   import java.sql.Timestamp;
    
 
 @ManagedBean(name = "DBmanager", eager = true)
