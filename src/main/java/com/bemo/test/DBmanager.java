@@ -109,7 +109,7 @@ Record record = new Record();
 record.setKey_column(rs.getLong("key_column"));
 record.setAge(rs.getInt("age"));
 //String cts = (rs.getString("ctimestamp"));
-record.setCtimestamp(StringUtils.left(rs.getTimestamp("ctimestamp"),8));
+record.setCtimestamp(rs.getString("ctimestamp"));
 list.add(record);
 } 
 con.close();
