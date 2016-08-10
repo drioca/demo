@@ -10,7 +10,7 @@ public class Record {
 
 private long key_column;
 private int age;
-private Date ctimestamp;
+private String ctimestamp;
 public long getKey_column() {
 return key_column;
 }
