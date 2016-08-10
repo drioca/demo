@@ -109,7 +109,7 @@ record.setAge(rs.getInt("age"));
 record.setCtimestamp(rs.getDate("ctimestamp"));
 list.add(record);
 } 
-//con.close();
+con.close();
 }
 catch(Exception e)
 {
@@ -119,7 +119,7 @@ finally
 {
 try
 {
-con.close();
+//con.close();
 ps.close();
 }
 catch(Exception e)
