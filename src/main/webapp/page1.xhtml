@@ -34,7 +34,7 @@ Result
 <f:facet name="header">
 Created Date
 </f:facet>
-#{u.ctimestamp}
+SimpleDateFormat("yyyy.MM.dd.HH.mm").format(#{u.ctimestamp})
 </h:column>
 
 </h:dataTable>
