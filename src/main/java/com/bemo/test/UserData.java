@@ -20,7 +20,7 @@ private static final long serialVersionUID = 1L;
 	private Date deadline; 
 	private long key_column;
 	private String ctimestamp;
-	private String ctimestamp2;
+	private String ctimestampt;
 
 	
    private static final ArrayList<Task> tasks 
