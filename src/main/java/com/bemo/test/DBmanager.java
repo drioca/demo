@@ -2,17 +2,24 @@ package com.bemo.test;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
-import java.io.Serializable;
 import javax.faces.bean.SessionScoped;
 import javax.faces.event.ValueChangeEvent;
 //DB
    import java.net.URI;
-    import java.net.URISyntaxException;
-    import java.sql.Connection;
-    import java.sql.Statement;
-    import java.sql.ResultSet;
-    import java.sql.DriverManager;
-    import java.sql.SQLException;
+   import java.net.URISyntaxException;
+   import java.sql.Connection;
+   import java.sql.Statement;
+   import java.sql.ResultSet;
+   import java.sql.DriverManager;
+   import java.sql.SQLException;
+   import java.sql.PreparedStatement;
+
+   import java.util.ArrayList;
+   import java.util.List;
+   import java.io.Serializable;
+   import java.util.Date;
+   import java.sql.Timestamp;
+   
 
 @ManagedBean(name = "DBmanager", eager = true)
 @SessionScoped
@@ -82,6 +89,50 @@ if(rs.next())
       }
       
    }
+
+// to list
+ public List<Record> getRecordList()
+{
+List<Record> list = new ArrayList<Record>();
+PreparedStatement ps = null;
+//Connection con = null;
+ResultSet rs = null;
+try
+{
+Connection con = getConnection(); 
+String sql = "select * from public.test";
+ps= con.prepareStatement(sql); 
+rs= ps.executeQuery(); 
+while (rs.next())
+{
+Record record = new Record();
+record.setKey_column(rs.getLong("key_column"));
+record.setAge(rs.getInt("age"));
+//String cts = (rs.getString("ctimestamp"));
+record.setCtimestamp(rs.getString("ctimestamp").substring( 0, 19));
+list.add(record);
+} 
+con.close();
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+finally
+{
+try
+{
+//con.close();
+ps.close();
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+}
+return list;
+}
+//end list
  
    }
 

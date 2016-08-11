@@ -2,17 +2,64 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-   xmlns:h="http://java.sun.com/jsf/html">
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:f="http://java.sun.com/jsf/core">
          <h:head>
-      <title>BEMO - Page 1</title>		
+      <title>DRIOCA</title>		
       <h:outputStylesheet library="css" name="styles.css"  /> 	
    </h:head>
-   <h:body>
-      <h2>This is Page1 - Under construction</h2>
-      <h3>To edit: modify page1.xhtml</h3>
-      <h:form>
-         <h:commandButton action="home?faces-redirect=true"
-            value="Back To Home Page" />
-      </h:form>
+   
+<h:body>
+
+<h1>JSF 2.0 View Data From A Database Table </h1>
+
+<h:dataTable value="#{DBmanager.getRecordList()}" var="u" border="1">
+
+<h:column>
+<f:facet name="header">
+Nr
+</f:facet>
+#{u.key_column}
+</h:column>
+
+<h:column>
+<f:facet name="header">
+Result
+</f:facet>
+#{u.age}
+</h:column>
+
+
+<h:column>
+<f:facet name="header">
+Created Date and Time
+</f:facet>
+#{u.ctimestamp}
+</h:column>
+
+</h:dataTable>
+   <h:form>
+      Would you  like to register new data?
+   <h:commandButton action="home?faces-redirect=true"
+            value="Sure" />
+   
+    </h:form>
+   <h:form>
+            <h:commandButton action="#{navigationController.moveToDatatablepage}" value="No, thanks rather to see another Datatable"/>
+   </h:form>
+   <br>
+   <h:form>
+            <h:commandButton action="home?faces-redirect=true"
+               value="Back To Home Page" />
+    </h:form>
+    <h:form>
+        
+    </h:form>
+    </br>
+    <h:form>
+   <a href="https://drioca.github.io/">
+    <input type="button" value="Open DRIOCA webpage" />
+   </a>
+   </h:form>
    </h:body>
 </html>

@@ -5,13 +5,13 @@
 	xmlns:f="http://java.sun.com/jsf/core"
    xmlns:h="http://java.sun.com/jsf/html">
       <h:head>
-      <title>BEMO - Data table</title>		
+      <title>Drioca</title>		
       <h:outputStylesheet library="css" name="styles.css"  /> 	
    </h:head>
    <h:body>
   
      
-         <h2>Data Table - Under construction</h2>
+         <h2>Data Table </h2>
    <h:form>
       <h:dataTable value="#{userData.tasks}" var="task"
          styleClass="taskTable"
@@ -41,5 +41,11 @@
          <h:commandButton action="home?faces-redirect=true"
             value="Home Page" />
       </h:form>
+      <br/>
+      <h:form>
+   <a href="https://drioca.github.io/">
+    <input type="button" value="Open DRIOCA webpage" />
+   </a>
+   </h:form>
    </h:body>
 </html>

@@ -7,6 +7,16 @@
          <h:head>
       <title>DRIOCA</title>		
       <h:outputStylesheet library="css" name="styles.css"  /> 	
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82254956-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
    </h:head>
 
    <h:body>
@@ -34,7 +44,7 @@
    <h:panelGrid id="panel" columns="2" border="1"
    cellpadding="10" cellspacing="1">
       <f:facet name="header">
-         <h:outputText value="Login"/> (out of service)
+         <h:outputText value="Login"/> (Coming soon!)
       </f:facet>
       <h:outputLabel value="Username" />
       <h:inputText  />
@@ -55,11 +65,15 @@
       <h3>Implicit Navigation using Managed Beans:</h3>
       </h:form>
             <h:form>
-      <h:commandButton action="#{navigationController.moveToPage1}"  value="Page 1" style="margin-right: 10px;"/> 
-      <h:commandButton action="#{navigationController.moveToDatatablepage}" value="Datatablepage"/>
+      <h:commandButton action="#{navigationController.moveToPage1}"  value="List of our data" style="margin-right: 10px;"/> 
+      <h:commandButton action="#{navigationController.moveToDatatablepage}" value="Another Datatable"/>
          
       </h:form>
       <br/>
-      
+      <h:form>
+   <a href="https://drioca.github.io/">
+    <input type="button" value="Open DRIOCA webpage" />
+   </a>
+   </h:form>
    </h:body>
 </html>
