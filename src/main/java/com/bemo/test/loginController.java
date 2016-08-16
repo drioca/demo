@@ -14,7 +14,7 @@ Simple JSF Controller demonstrating Shiro login/logout process.
 @author Glen Smith
 */
 @Model
-public class LoginController {
+public class loginController {
 
 String username;
 String password;
