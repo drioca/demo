@@ -40,6 +40,13 @@ public class NavigationController implements Serializable {
    }   
 //-------------------------------------------------------
    
+   public String getPageId() {
+      return pageId;
+   }
+
+   public void setPageId(String pageId) {
+      this.pageId = pageId;
+   }
 
 
 }
