@@ -34,8 +34,7 @@ token.setRememberMe(rememberMe);
 
 Subject currentUser = SecurityUtils.getSubject();
 
-log.info("Submitting login with username of"; + username
-        + "and password of"+ password);
+log.info("Submitting login with username of"+ username + "and password of"+ password);
 
 try {
     currentUser.login(token);
