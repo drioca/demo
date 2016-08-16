@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+<html xmlns="http://www.w3.org/1999/xhtml&quot;
+    xmlns:h="http://java.sun.com/jsf/html&quot;
+    xmlns:f="http://java.sun.com/jsf/core"&gt;
+<h:head>
+    <title>Login Page</title>
+</h:head>
+<h:body>
+<h:form>;
+    <h:messages />;
+
+    <h2>Login Page</h2>;
+    <p>You can use &quot;admin&quot; and &quot;secret&quot; to login.</p>;
+    <h:panelGrid columns=&quot;3&quot;>;
+
+        <h:outputLabel for=&quot;username&quot; value=&quot;User Name:&quot; />;
+        <h:inputText id=&quot;username&quot; value=&quot;#{loginController.username}&quot;
+            required=&quot;true&quot; label=&quot;Username&quot; />;
+        <h:message for=&quot;username&quot; />;
+
+        <h:outputLabel for=&quot;password&quot; value=&quot;Password:&quot; />;
+        <h:inputSecret id=&quot;password&quot; value=&quot;#{loginController.password}&quot;
+            label=&quot;Password&quot; />;
+        <h:message for=&quot;password&quot; />;
+
+        <h:outputLabel for=&quot;rememberMe&quot; value=&quot;Remember Me:&quot; />;
+        <h:selectBooleanCheckbox id=&quot;rememberMe&quot;
+            value=&quot;#{loginController.rememberMe}&quot; />;
+
+        <h:commandButton action=&quot;#{loginController.authenticate()}&quot;
+            value=&quot;Login&quot; />;
+
+    </h:panelGrid>;
+</h:form>;
+</h:body>
+</html>
