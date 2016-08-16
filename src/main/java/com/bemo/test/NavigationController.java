@@ -20,7 +20,7 @@ public class NavigationController implements Serializable {
    }
 
    public String moveToDatatablepage(){
-      return "loginepage";
+      return "loginpage";
    }
 
    public String moveToLoginpage(){
