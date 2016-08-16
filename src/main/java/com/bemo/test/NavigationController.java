@@ -20,13 +20,9 @@ public class NavigationController implements Serializable {
    }
 
    public String moveToDatatablepage(){
-      return "loginpage";
+      return "datatablepage";
    }
 
-   public String moveToLoginpage(){
-      return "loginpage";
-   }
-   
    public String moveToHomePage(){
       return "home";
    }
@@ -38,9 +34,7 @@ public class NavigationController implements Serializable {
    public String processDatatablepage(){
       return "page";
    }
-   public String processLoginepage(){
-      return "page";
-   }
+
    public String showPage(){
       if(pageId == null){
          return "home";
@@ -48,9 +42,7 @@ public class NavigationController implements Serializable {
       if(pageId.equals("1")){
          return "page1";
       }else if(pageId.equals("2")){
-         return "loginpage";
-     
-         
+         return "datatablepage";
       }else{
          return "home";
       }
