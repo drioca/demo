@@ -45,9 +45,9 @@ try {
             null,
             new FacesMessage("Login Failed:"+ e.getMessage(), e
                     .toString()));
-    return &quot;/login&quot;;
+    return "/login";
 }
-return &quot;protected?faces-redirect=true&quot;;
+return "protected?faces-redirect=true";
 }
 
 public String logout() {
