@@ -1,3 +1,5 @@
+package com.bemo.test;
+
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.config.IniSecurityManagerFactory;
