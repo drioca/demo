@@ -43,7 +43,7 @@ try {
     log.warning(e.getMessage());
     FacesContext.getCurrentInstance().addMessage(
             null,
-            new FacesMessage(&quot;Login Failed: &quot; + e.getMessage(), e
+            new FacesMessage("Login Failed:"+ e.getMessage(), e
                     .toString()));
     return &quot;/login&quot;;
 }
@@ -58,7 +58,7 @@ try {
 } catch (Exception e) {
     log.warning(e.toString());
 }
-return &quot;index&quot;;
+return "index";
 }
 
 public String getUsername() {
