@@ -47,7 +47,7 @@ public class NavigationController implements Serializable {
       }
       if(pageId.equals("1")){
          return "page1";
-      }else if(pageId.equals("2")){
+      }if(pageId.equals("2")){
          return "datatablepage";
       }else if(pageId.equals("3")){
          return "loginpage";
