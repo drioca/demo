@@ -24,7 +24,7 @@ public class NavigationController implements Serializable {
    }
 
    public String moveToLoginpage(){
-      return "datatablepage";
+      return "loginpage";
    }
    
    public String moveToHomePage(){
