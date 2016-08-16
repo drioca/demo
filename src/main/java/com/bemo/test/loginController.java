@@ -29,13 +29,13 @@ public String authenticate() {
 UsernamePasswordToken token = new UsernamePasswordToken(username,
         password);
 
-// &quot;Remember Me&quot; built-in:
+// "&quot;"Remember Me"; built-in:
 token.setRememberMe(rememberMe);
 
 Subject currentUser = SecurityUtils.getSubject();
 
-log.info(&quot;Submitting login with username of &quot; + username
-        + &quot; and password of &quot; + password);
+log.info("Submitting login with username of"; + username
+        + "and password of"+ password);
 
 try {
     currentUser.login(token);
