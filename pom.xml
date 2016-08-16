@@ -24,7 +24,12 @@
          <artifactId>jsf-api</artifactId>
          <version>2.1.7</version>
       </dependency>
-		
+		    <dependency>
+        <groupId>javax.enterprise</groupId>
+        <artifactId>cdi-api</artifactId>
+        <scope>provided</scope>
+        <version>version</version>
+    </dependency>
       <dependency>
          <groupId>com.sun.faces</groupId>
          <artifactId>jsf-impl</artifactId>
