@@ -14,27 +14,31 @@ public class NavigationController implements Serializable {
 
    @ManagedProperty(value="#{param.pageId}")
    private String pageId;
-
+//-------------------------------------------------------
    public String moveToPage1(){
       return "page1";
    }
-
    public String moveToDatatablepage(){
       return "datatablepage";
    }
-
+   public String moveToLoginpage(){
+      return "loginpage";
+   }
    public String moveToHomePage(){
       return "home";
    }
-
+//-------------------------------------------------------
+   
    public String processPage1(){
       return "page";
    }
-
    public String processDatatablepage(){
       return "page";
    }
-
+   public String processLoginpage(){
+      return "page";
+   }   
+//-------------------------------------------------------
    public String showPage(){
       if(pageId == null){
          return "home";
@@ -51,7 +55,6 @@ public class NavigationController implements Serializable {
    public String getPageId() {
       return pageId;
    }
-
    public void setPageId(String pageId) {
       this.pageId = pageId;
    }
