@@ -1,7 +1,7 @@
 package com.bemo.test;
 
 import java.util.logging.Logger;
-import javax.enterprise.inject.Model;
+//import javax.enterprise.inject.Model;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import org.apache.shiro.SecurityUtils;
@@ -14,7 +14,7 @@ import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
 
