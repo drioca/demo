@@ -11,25 +11,25 @@
     <h:messages />;
 
     <h2>Login Page</h2>;
-    <p>You can use &quot;admin&quot; and &quot;secret&quot; to login.</p>;
-    <h:panelGrid columns=&quot;3&quot;>;
+    <p>You can use "admin" and "secret" to login.</p>;
+    <h:panelGrid columns="3">;
 
-        <h:outputLabel for=&quot;username&quot; value=&quot;User Name:&quot; />;
-        <h:inputText id=&quot;username&quot; value=&quot;#{loginController.username}&quot;
-            required=&quot;true&quot; label=&quot;Username&quot; />;
-        <h:message for=&quot;username&quot; />;
+        <h:outputLabel for="username" value="User Name:" />;
+        <h:inputText id="username" value="#{loginController.username}"
+            required="true" label="Username" />;
+        <h:message for="username" />;
 
-        <h:outputLabel for=&quot;password&quot; value=&quot;Password:&quot; />;
-        <h:inputSecret id=&quot;password&quot; value=&quot;#{loginController.password}&quot;
-            label=&quot;Password&quot; />;
-        <h:message for=&quot;password&quot; />;
+        <h:outputLabel for="password" value="Password:" />;
+        <h:inputSecret id="password" value="#{loginController.password}"
+            label="Password" />;
+        <h:message for="password" />;
 
-        <h:outputLabel for=&quot;rememberMe&quot; value=&quot;Remember Me:&quot; />;
-        <h:selectBooleanCheckbox id=&quot;rememberMe&quot;
-            value=&quot;#{loginController.rememberMe}&quot; />;
+        <h:outputLabel for="rememberMe" value="Remember Me:" />;
+        <h:selectBooleanCheckbox id="rememberMe"
+            value="#{loginController.rememberMe}" />;
 
-        <h:commandButton action=&quot;#{loginController.authenticate()}&quot;
-            value=&quot;Login&quot; />;
+        <h:commandButton action="#{loginController.authenticate()}"
+            value="Login" />;
 
     </h:panelGrid>;
 </h:form>;
