@@ -38,7 +38,9 @@ public class NavigationController implements Serializable {
    public String processDatatablepage(){
       return "page";
    }
-
+   public String processLoginepage(){
+      return "page";
+   }
    public String showPage(){
       if(pageId == null){
          return "home";
