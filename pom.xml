@@ -28,7 +28,7 @@
         <groupId>javax.enterprise</groupId>
         <artifactId>cdi-api</artifactId>
         <scope>provided</scope>
-        <version>version</version>
+        <version>1.2</version>
     </dependency>
       <dependency>
          <groupId>com.sun.faces</groupId>
