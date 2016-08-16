@@ -31,8 +31,9 @@
             value="#{loginController.rememberMe}" />
 
         <h:commandButton action="#{loginController.authenticate()}"
-            value="Login" />
-
+            value="*Login*" />
+<h:commandButton action="home?faces-redirect=true"
+            value="Back To Home Page" />
     </h:panelGrid>
          
          <h:commandButton action="home?faces-redirect=true"
