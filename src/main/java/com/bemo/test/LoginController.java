@@ -53,7 +53,7 @@ try {
             null,
             new FacesMessage("Login Failed:"+ e.getMessage(), e
                     .toString()));
-    return "/loginpage";
+    return "/login";
 }
 return "protected?faces-redirect=true";
 }
