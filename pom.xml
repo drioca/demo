@@ -49,12 +49,10 @@
         <!-- Shiro uses SLF4J for logging.  We'll use the 'simple' binding
              in this example app.  See http://www.slf4j.org for more info. -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.7</version>
-            <scope>test</scope>
-        </dependency>
-        
+    		<groupId>org.slf4j</groupId>
+    		<artifactId>slf4j-log4j12</artifactId>
+    		<version>1.7.14</version>
+	</dependency>
    </dependencies>
 	
    <build>
