@@ -14,7 +14,7 @@ import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
-//import org.slf4j.Logger;
+import org.slf4j.Logger; //ez itt gyanús ezzen nem lehet buildelni?
 import org.slf4j.LoggerFactory;
 /**
 
@@ -28,9 +28,7 @@ String username;
 String password;
 boolean rememberMe = false;
 
-private static final Logger log = Logger.getLogger(LoginController.class
-
-.getName());
+private static final Logger log = Logger.getLogger(LoginController.class.getName());
 public String authenticate() {
 
 // Example using most common scenario of username/password pair:
