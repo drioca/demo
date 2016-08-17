@@ -2,7 +2,7 @@ package com.bemo.test;
 
 import java.util.logging.Logger;
 import javax.enterprise.inject.Model;
-import javax.enterprise.context.SessionScoped
+import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import org.apache.shiro.SecurityUtils;
