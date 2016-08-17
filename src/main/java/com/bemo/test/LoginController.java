@@ -32,7 +32,7 @@ String username;
 String password;
 boolean rememberMe = false;
 
-private static final Logger log = Logger.getLogger(loginController.class.getName());
+private static final Logger log = Logger.getLogger(LoginController.class.getName());
 public String authenticate() {
 
 // Example using most common scenario of username/password pair:
