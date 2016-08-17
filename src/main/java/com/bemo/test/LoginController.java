@@ -27,9 +27,9 @@ Simple JSF Controller demonstrating Shiro login/logout process.
 @Model
 
 
-public class LoginController implements Serializable{
+public class LoginController  {
 
-String username;
+public String username;
 String password;
 boolean rememberMe = false;
 
