@@ -37,7 +37,7 @@ public String authenticate() {
 UsernamePasswordToken token = new UsernamePasswordToken(username,
         password);
 
-// "&quot;"Remember Me"; built-in:
+// "Remember Me" built-in:
 token.setRememberMe(rememberMe);
 
 Subject currentUser = SecurityUtils.getSubject();
