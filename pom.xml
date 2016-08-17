@@ -36,11 +36,11 @@
          <artifactId>jsf-impl</artifactId>
          <version>2.1.7</version>
       </dependency>
-		<dependency> 
-<groupId>postgresql</groupId> 
-<artifactId>postgresql</artifactId> 
-<version>9.0-801.jdbc4</version> 
-</dependency> 
+	<dependency> 
+		<groupId>postgresql</groupId> 
+		<artifactId>postgresql</artifactId> 
+		<version>9.0-801.jdbc4</version> 
+	</dependency> 
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-core</artifactId>
@@ -53,7 +53,7 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.21</version>
             <scope>test</scope>
-        </dependency>-->
+        </dependency>
         
    </dependencies>
 	
