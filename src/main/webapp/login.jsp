@@ -9,8 +9,9 @@
       <h:outputStylesheet library="css" name="styles.css"  /> 	
    </h:head>
 <h:body>
-<h:form>
-   
+
+
+      <h:form>
          <h:commandButton action="home?faces-redirect=true"
             value="Back To Home Page" />
       </h:form>
