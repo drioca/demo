@@ -1,8 +1,9 @@
 package com.bemo.test;
-
+import java.io.Serializable;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.RequestScoped;
 import java.util.logging.Logger;
-import javax.enterprise.inject.Model;
-import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import org.apache.shiro.SecurityUtils;
@@ -18,15 +19,15 @@ import org.apache.shiro.util.Factory;
 //import org.slf4j.Logger; //ez itt gyanús ezzen nem lehet buildelni?
 import org.slf4j.LoggerFactory;
 
-
 /**
 
 Simple JSF Controller demonstrating Shiro login/logout process.
 @author Glen Smith
 */
-@Model
-@SessionScoped
 
+
+@ManagedBean(name = "loginController", eager = true)
+@RequestScoped
 public class LoginController  {
 
 public String username;
