@@ -39,4 +39,8 @@
     <listener>
         <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
     </listener>
+    <session-config>
+  <!-- web.xml expects the session timeout in minutes: -->
+  <session-timeout>30</session-timeout>
+</session-config>
 </web-app>
