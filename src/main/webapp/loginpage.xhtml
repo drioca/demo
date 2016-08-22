@@ -20,7 +20,7 @@
     <h2>Login Page</h2>
     <p>You can use "admin" and "qwert" to login.</p>
     </p:fieldset>
-    <h:panelGrid columns="3">
+    <p:panelGrid columns="3">
         <h:outputLabel for="username" value="User Name:" />
         <h:inputText id="username" value="#{loginController.username}"
             required="true" label="Username" />
@@ -40,7 +40,7 @@
         <h:commandButton action="#{loginController.authenticate()}"
             value="Login" />
 
-    </h:panelGrid>
+    </p:panelGrid>
      
 </h:form>
 	<p:fieldset legend="PrimeFaces in progress..." style="margin-bottom:20px">
