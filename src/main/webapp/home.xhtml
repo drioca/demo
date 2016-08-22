@@ -69,7 +69,16 @@
       <h:commandButton action="#{navigationController.moveToDatatablepage}" value="Another Datatable"/>
          
       </h:form>
-      <br/>
+      <hr/>
+      Redirect navigation to loginpage
+            <h:form>
+         <h3>Forward</h3>
+         <h:commandButton action="loginpage" value="Login" />
+         <h3>Redirect</h3>
+         <h:commandButton action="loginpage?faces-redirect=true"
+         value="Page1" />
+      </h:form>
+      <hr />
       <h:form>
    <a href="https://drioca.github.io/">
     <input type="button" value="Open DRIOCA webpage" />
