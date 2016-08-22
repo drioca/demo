@@ -11,7 +11,7 @@
      
    </h:head>
 <h:body>
-<h:form>
+<b:form>
     <h:messages />
 
     <h2>Login Page</h2>
@@ -33,11 +33,11 @@
         <h:selectBooleanCheckbox id="rememberMe"
             value="#{loginController.rememberMe}" />
 
-        <h:commandButton action="#{loginController.authenticate()}"
+        <b:commandButton action="#{loginController.authenticate()}"
             value="Login" />
 
-    </h:panelGrid>
-</h:form>
+    </b:panelGrid>
+</b:form>
       <h:form>
          <p:commandButton action="home?faces-redirect=true"
             value="Back To Home Page" />
