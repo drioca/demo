@@ -10,16 +10,16 @@
       <link type="text/css" rel="stylesheet" href="/project/faces/javax.faces.resource/theme.css?ln=primefaces-le-frog" />
      
    </h:head>
-     <p:fieldset legend="Basic" style="margin-bottom:20px">
+     
 <h:body>
-	
-<h:form>
 	<p:fieldset legend="Basic" style="margin-bottom:20px">
+<h:form>
+	
     <h:messages />
 
     <h2>Login Page</h2>
     <p>You can use "admin" and "qwert" to login.</p>
-    </p:fieldset>
+    
     <p:panelGrid columns="3">
         <h:outputLabel for="username" value="User Name:" />
         <h:inputText id="username" value="#{loginController.username}"
@@ -47,6 +47,6 @@
          <p:commandButton action="home?faces-redirect=true"
             value="Back To Home Page" />
       </h:form>
-     
+     </p:fieldset>
 </h:body>
 </html>
