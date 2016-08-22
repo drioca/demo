@@ -11,12 +11,12 @@
      
    </h:head>
 <h:body>
-<h:form>
+<p:form>
     <h:messages />
 
     <h2>Login Page</h2>
     <p>You can use "admin" and "qwert" to login.</p>
-    <b:panelGrid columns="3">
+    <p:panelGrid columns="3">
         <h:outputLabel for="username" value="User Name:" />
         <h:inputText id="username" value="#{loginController.username}"
             required="true" label="Username" />
@@ -33,11 +33,11 @@
         <h:selectBooleanCheckbox id="rememberMe"
             value="#{loginController.rememberMe}" />
 
-        <b:commandButton action="#{loginController.authenticate()}"
+        <p:commandButton action="#{loginController.authenticate()}"
             value="Login" />
 
-    </b:panelGrid>
-</h:form>
+    </p:panelGrid>
+</p:form>
       <h:form>
          <p:commandButton action="home?faces-redirect=true"
             value="Back To Home Page" />
