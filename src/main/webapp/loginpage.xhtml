@@ -12,7 +12,7 @@
    </h:head>
      
 <h:body>
-	<p:fieldset legend="Basic" style="margin-bottom:20px">
+	<p:fieldset legend="PrimeFaces" style="margin-bottom:20px">
 <h:form>
 	
     <h:messages />
@@ -26,10 +26,10 @@
             required="true" label="Username" />
         <p:message for="username" />
 
-        <h:outputLabel for="password" value="Password:" />
-        <h:inputSecret id="password" value="#{loginController.password}"
+        <p:outputLabel for="password" value="Password:" />
+        <p:inputSecret id="password" value="#{loginController.password}"
             label="Password" />
-        <p:message for="password" />
+        <h:message for="password" />
         
         
 
