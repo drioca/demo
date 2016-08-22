@@ -25,7 +25,25 @@
     <param-value>resources.application</param-value>
   </context-param>
 <listener>
-<listener-class>com.sun.faces.config.ConfigureListener</listener-class>
-</listener>
+        <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
 
+        <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
+</listener>
+  <filter>
+        <filter-name>ShiroFilter</filter-name>
+        <filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ShiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+        <dispatcher>ERROR</dispatcher>
+    </filter-mapping>
+
+    <session-config>
+  <!-- web.xml expects the session timeout in minutes: -->
+  <session-timeout>1</session-timeout>
+</session-config>
 </web-app>
