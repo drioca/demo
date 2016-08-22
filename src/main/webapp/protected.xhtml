@@ -4,12 +4,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
    xmlns:h="http://java.sun.com/jsf/html">
     <h:head>
-        <title>Secret Page</title>
+        <title>DRIOCA Secret Page</title>
+         <h:outputStylesheet library="css" name="styles.css"  /> 	
     </h:head>
     <h:body>
         PIN: 9182
         <h:form>
             <h:commandButton action="${loginController.logout()}" value="Logout"/>
         </h:form>
+        <h:form>
+            <h:commandButton action="home?faces-redirect=true"
+               value="Back To Home Page" />
+    </h:form>
+    <h:form>
+        
+    </h:form>
+    </br>
+    <h:form>
+   <a href="https://drioca.github.io/">
+    <input type="button" value="Open DRIOCA webpage" />
+   </a>
+   </h:form>
     </h:body>
 </html>
