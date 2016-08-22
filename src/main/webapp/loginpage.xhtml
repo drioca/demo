@@ -19,6 +19,7 @@
 
     <h2>Login Page</h2>
     <p>You can use "admin" and "qwert" to login.</p>
+    </p:fieldset>
     <p:panelGrid columns="3">
         <h:outputLabel for="username" value="User Name:" />
         <h:inputText id="username" value="#{loginController.username}"
@@ -40,7 +41,7 @@
             value="Login" />
 
     </p:panelGrid>
-     </p:fieldset>
+     
 </h:form>
       <h:form>
          <p:commandButton action="home?faces-redirect=true"
