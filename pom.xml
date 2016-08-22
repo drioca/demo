@@ -51,6 +51,11 @@
     <version>6.0.0</version>
 </dependency>
 
+	<dependency>
+		<groupId>org.primefaces.themes</groupId>
+		<artifactId>le-frog</artifactId>
+		<version>1.0.8</version>
+	</dependency>
 
     
 
