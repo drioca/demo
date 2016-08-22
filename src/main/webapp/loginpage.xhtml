@@ -12,7 +12,7 @@
    </h:head>
      
 <h:body>
-	<p:fieldset legend="PrimeFaces" style="margin-bottom:20px">
+	<p:fieldset legend="PrimeFaces in progress..." style="margin-bottom:20px">
 <h:form>
 	
     <h:messages />
@@ -20,9 +20,9 @@
     <h2>Login Page</h2>
     <p>You can use "admin" and "qwert" to login.</p>
     
-    <p:panelGrid columns="3">
+    <p:panelGrid columns="2">
         <p:outputLabel for="username" value="User Name:" />
-        <h:inputText id="username" value="#{loginController.username}"
+        <p:inputText id="username" value="#{loginController.username}"
             required="true" label="Username" />
         <h:message for="username" />
 
