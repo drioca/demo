@@ -46,8 +46,8 @@
 		
 		  <dependency>  
     <groupId>org.primefaces.extensions</groupId>  
-    <artifactId>all-themes</artifactId>   
-    <version>1.3.2</version>  
+    <artifactId>le-frog</artifactId>   
+    <version>1.0.10</version>  
 </dependency> 
 		<dependency> 
 <groupId>postgresql</groupId> 
