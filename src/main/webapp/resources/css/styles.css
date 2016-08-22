@@ -1,3 +1,7 @@
+.mimiButton{
+   width: 100px;
+}
+
 .taskTable{   
    border-collapse:collapse;
    border:1px solid #000000;
