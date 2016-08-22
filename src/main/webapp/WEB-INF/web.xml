@@ -27,6 +27,9 @@
 <listener>
 <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
 </listener>
+<listener>
+        <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
+</listener>
   <filter>
         <filter-name>ShiroFilter</filter-name>
         <filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
@@ -39,9 +42,7 @@
         <dispatcher>INCLUDE</dispatcher>
         <dispatcher>ERROR</dispatcher>
     </filter-mapping>
-    <listener>
-        <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
-    </listener>
+
     <session-config>
   <!-- web.xml expects the session timeout in minutes: -->
   <session-timeout>1</session-timeout>
