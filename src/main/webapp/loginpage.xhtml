@@ -22,12 +22,12 @@
     
     <p:panelGrid columns="3">
         <p:outputLabel for="username" value="User Name:" />
-        <p:inputText id="username" value="#{loginController.username}"
+        <h:inputText id="username" value="#{loginController.username}"
             required="true" label="Username" />
-        <p:message for="username" />
+        <h:message for="username" />
 
         <p:outputLabel for="password" value="Password:" />
-        <p:inputSecret id="password" value="#{loginController.password}"
+        <h:inputSecret id="password" value="#{loginController.password}"
             label="Password" />
         <h:message for="password" />
         
