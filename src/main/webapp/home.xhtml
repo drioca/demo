@@ -41,22 +41,7 @@
       </h:commandButton>
    </h:form>  
    <hr />
-   <h:panelGrid id="panel" columns="2" border="1"
-   cellpadding="10" cellspacing="1">
-      <f:facet name="header">
-         <h:outputText value="Login"/> (Coming soon!)
-      </f:facet>
-      <h:outputLabel value="Username" />
-      <h:inputText  />
-      <h:outputLabel value="Password" />
-      <h:inputSecret />
-      <f:facet name="footer">
-         <h:panelGroup style="display:block; text-align:center">
-            <h:commandButton id="submit" value="Submit" /> (out of service)
-         </h:panelGroup>
-      </f:facet>
-</h:panelGrid>
-<hr />
+
 <h1> Agree 
    <h:selectBooleanCheckbox value="Remember Me" id="chk1" /> Yes 
    <h:selectBooleanCheckbox value="Remember Me" id="chk2" /></h1>
@@ -70,13 +55,12 @@
          
       </h:form>
       <hr/>
-      Redirect navigation to loginpage
             <h:form>
-         <h3>Forward</h3>
+         <h3>Forward navigation to loginpage</h3>
          <h:commandButton action="loginpage" value="Login" />
-         <h3>Redirect</h3>
+         <h3>Redirect navigation to loginpage</h3>
          <h:commandButton action="loginpage?faces-redirect=true"
-         value="Page1" />
+         value="Login" />
       </h:form>
       <hr />
       <h:form>
