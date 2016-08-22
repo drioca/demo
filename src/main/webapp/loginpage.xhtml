@@ -15,7 +15,10 @@
     <h2>Login Page</h2>
     <p>You can use "admin" and "secret" to login.</p>
     <h:panelGrid columns="3">
-
+        <h:outputLabel for="username" value="User Name:" />
+        <h:inputText id="username" value="#{loginController.username}"
+            required="true" label="Username" />
+        <h:message for="username" />
 
         <h:outputLabel for="password" value="Password:" />
         <h:inputSecret id="password" value="#{loginController.password}"
@@ -23,12 +26,6 @@
         <h:message for="password" />
         
         
-        <h:outputLabel for="username" value="User Name:" />
-        <h:inputText id="username" value="#{loginController.username}"
-            required="true" label="Username" />
-        <h:message for="username" />
-
-
 
         <h:outputLabel for="rememberMe" value="Remember Me:" />
         <h:selectBooleanCheckbox id="rememberMe"
