@@ -29,11 +29,18 @@
          <groupId>com.sun.faces</groupId>
          <artifactId>jsf-impl</artifactId>
          <version>2.1.7</version>
+         <repositories>
+	<repository>
+		<id>prime-repo</id>
+		<name>Prime Repo</name>
+		<url>http://repository.primefaces.org</url>
+	</repository>
+</repositories>
       </dependency>
       		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
-			<version>5.0</version>
+			<version>6.0</version>
 		</dependency>
 		
 		  <dependency>  
