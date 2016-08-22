@@ -21,12 +21,12 @@
     <p>You can use "admin" and "qwert" to login.</p>
     </p:fieldset>
     <h:panelGrid columns="3">
-        <p:outputLabel for="username" value="User Name:" />
-        <p:inputText id="username" value="#{loginController.username}"
+        <h:outputLabel for="username" value="User Name:" />
+        <h:inputText id="username" value="#{loginController.username}"
             required="true" label="Username" />
         <h:message for="username" />
 
-        <p:outputLabel for="password" value="Password:" />
+        <h:outputLabel for="password" value="Password:" />
         <h:inputSecret id="password" value="#{loginController.password}"
             label="Password" />
         <h:message for="password" />
@@ -37,7 +37,7 @@
         <h:selectBooleanCheckbox id="rememberMe"
             value="#{loginController.rememberMe}" />
 
-        <p:commandButton action="#{loginController.authenticate()}"
+        <h:commandButton action="#{loginController.authenticate()}"
             value="Login" />
 
     </h:panelGrid>
