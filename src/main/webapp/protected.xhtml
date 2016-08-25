@@ -9,12 +9,13 @@
          <h:outputStylesheet library="css" name="styles.css"  /> 	
     </h:head>
     <h:body>
+       <p:fieldset legend="PrimeFaces in progress..." style="margin-bottom:20px">
         PIN: 9182
         <h:form>
             <h:commandButton action="${loginController.logout()}" value="Logout"/>
         </h:form>
         <h:form>
-            <h:commandButton action="home?faces-redirect=true"
+            <p:commandButton action="home?faces-redirect=true"
                value="Back To Home Page" />
     </h:form>
     <h:form>
@@ -26,5 +27,6 @@
     <input type="button" value="Open DRIOCA webpage" />
    </a>
    </h:form>
+   </p:fieldset>
     </h:body>
 </html>
