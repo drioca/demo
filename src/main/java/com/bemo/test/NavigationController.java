@@ -19,8 +19,8 @@ public class NavigationController implements Serializable {
       return "page1";
    }
 
-   public String moveToDatatablepage(){
-      return "datatablepage";
+   public String moveToTask_tablepage(){
+      return "task_tablepage";
    }
 
    public String moveToHomePage(){
