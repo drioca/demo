@@ -116,7 +116,7 @@
           <version>2.19.1</version>
          <!-- 	skipTests? true/falsh -->
          	<configuration>
-          		<skipTests>false</skipTests>
+          		<skipTests>true</skipTests>
         	</configuration> 
         </plugin>
 	<plugin>
