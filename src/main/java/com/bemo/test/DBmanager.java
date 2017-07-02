@@ -100,7 +100,7 @@ ResultSet rs = null;
 try
 {
 Connection con = getConnection(); 
-String sql = "select * from public.testorder by ctimestamp";
+String sql = "select * from public.test order by ctimestamp";
 ps= con.prepareStatement(sql); 
 rs= ps.executeQuery(); 
 while (rs.next())
