@@ -62,9 +62,8 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
    }
    
       public void average () {
-          float iaVg = 0f;
-        ResultSet rs;
-        try {
+         
+           try {
             Connection con = getConnection( ); 
             Statement stmt = con.createStatement();
             
