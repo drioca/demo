@@ -61,14 +61,14 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
       }
    }
    
-      public void average () {
+      public static void average () {
          
            try {
             Connection con = getConnection( ); 
             Statement stmt = con.createStatement();
-            
+            ResultSet rs = stmt.executeQuery("SELECT AVG(age) FROM test");
        
-       UserData.setAverage((stmt.executeQuery("SELECT AVG(age) FROM test")).getString);
+       UserData.setAverage(rs.toString);
         
          con.close();
        
