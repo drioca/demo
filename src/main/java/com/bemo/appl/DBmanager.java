@@ -61,7 +61,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
       }
    }
    
-      public static void average () {
+      public void average () {
          
            try {
             Connection con = getConnection( ); 
