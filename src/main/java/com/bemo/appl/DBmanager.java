@@ -68,7 +68,7 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
             Statement stmt = con.createStatement();
             
        
-       UserData.setAverage(Float.toString(stmt.executeQuery("SELECT AVG(age) FROM test"));
+       UserData.setAverage(Float.toString(stmt.executeQuery("SELECT AVG(age) FROM test")));
         
          con.close();
        
