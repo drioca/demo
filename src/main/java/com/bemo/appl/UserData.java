@@ -135,12 +135,12 @@ private static final long serialVersionUID = 1L;
 	}
 
 //aVg
-  public static String aVg;
-   	public String getaVg() {
+  private static String avg;
+   	public String getAverage() {
       	return aVg;
    	}
-  public void setaVg(String aVg) {
-      	this.aVg = aVg;
+  public void setAverage(String avg) {
+      	this.avg = avg;
 	}
 
 }
