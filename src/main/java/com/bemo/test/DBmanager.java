@@ -100,7 +100,7 @@ ResultSet rs = null;
 try
 {
 Connection con = getConnection(); 
-String sql = "select * from public.test order by key_column ";
+String sql = "select * from public.test";
 ps= con.prepareStatement(sql); 
 rs= ps.executeQuery(); 
 while (rs.next())
