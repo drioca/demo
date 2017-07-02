@@ -1,4 +1,4 @@
-package com.bemo.test;
+package com.bemo.appl;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
