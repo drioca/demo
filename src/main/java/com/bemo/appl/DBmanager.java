@@ -66,7 +66,8 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
            try {
             Connection con = getConnection( ); 
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT AVG(age) FROM test");
+            ResultSet rs = null;
+              rs = stmt.executeQuery("SELECT AVG(age) FROM test");
        
        UserData.setAverage(rs.toString);
         
