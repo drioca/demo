@@ -38,14 +38,14 @@ private static Connection getConnection() throws URISyntaxException, SQLExceptio
 
    public void insert () {
         
-      String iNs = "INSERT INTO test (age) VALUES (" + Integer.toString(UserData.age) +");";
+      String ins = "INSERT INTO test (age) VALUES (" + Integer.toString(UserData.age) +");";
 
         try {
             Connection con = getConnection( ); 
             Statement stmtc = con.createStatement();
          stmtc.executeUpdate("CREATE TABLE IF NOT EXISTS public.test (key_column bigserial NOT NULL, age numeric(4,0), ctimestamp timestamptz DEFAULT now(), CONSTRAINT test_pkey PRIMARY KEY (key_column) );");
         Statement stmt = con.createStatement();
-        stmt.executeUpdate(iNs);
+        stmt.executeUpdate(ins);
         stmt.executeUpdate("commit;");
          con.close();
         }
