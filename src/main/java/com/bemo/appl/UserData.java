@@ -140,7 +140,7 @@ private static final long serialVersionUID = 1L;
       	return avg;
    	}
   public static void setAverage(String avg) {
-      	this.avg = avg;
+      	avg = avg;
 	}
 
 }
