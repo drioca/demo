@@ -1,4 +1,4 @@
-package com.bemo.test;
+package com.bemo.appl;
 import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
