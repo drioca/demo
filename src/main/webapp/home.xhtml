@@ -26,11 +26,11 @@
 </h:form>
 </div>
    <hr />
-   <h3>Type a number between 10 and 30</h3>
+   <h3>Type your age! - a number between 10 and 130</h3>
    <h:form>
       <h:inputText id="ageInput" value="#{userData.age}" 
          label=" " required="true">
-         <f:validateLongRange minimum="10" maximum="30" />
+         <f:validateLongRange minimum="10" maximum="130" />
          
       </h:inputText>		
       <h:commandButton value="Save data in new row"  action="result">
